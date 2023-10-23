@@ -3,11 +3,11 @@ def magic_calculation(a, b):
     result = 0
     for n in range(1, 3):
         try:
-            if(n > a):
-                raise Exception("value of n too large")
+            if n > a:
+                raise ValueError("value of n too large")
             else:
                 result += (a**b) / n
-        except:
+        except ValueError:
             result = a + b
             break
-        return(result)
+        return result
