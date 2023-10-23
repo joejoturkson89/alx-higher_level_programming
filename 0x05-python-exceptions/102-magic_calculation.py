@@ -10,5 +10,6 @@ def magic_calculation(a, b):
                 result += (a ** b) / i
         except:
             result = b + a
+            break
 
-        return result
+        return (result)
